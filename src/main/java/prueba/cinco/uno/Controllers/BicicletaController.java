@@ -20,7 +20,7 @@ public class BicicletaController {
 
     @GetMapping("saludo")
     public String saludo() {
-        return "holi, un pastelito ...?";
+        return "holi, un pastelito ....?";
     }
 
     @GetMapping("api/toString")
