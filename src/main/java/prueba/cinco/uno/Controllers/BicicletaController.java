@@ -18,6 +18,11 @@ public class BicicletaController {
         this.repository = repository;
     }
 
+    @GetMapping("saludo")
+    public String saludo() {
+        return "holi, un pastelito ?";
+    }
+
     @GetMapping("api/toString")
     public ResponseEntity<List<Bicicleta>> viewList() {
         if (repository.count() == 0) return ResponseEntity.notFound().build();
